@@ -53,8 +53,6 @@ const DetailPage: React.FC = () => {
     navigate("/");
   };
 
-  console.log("detail:", contactDetail);
-
   if (!contactDetail) {
     return (
       <div>

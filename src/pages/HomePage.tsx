@@ -33,8 +33,6 @@ const HomePage: React.FC = () => {
     setContactRegular(contactsOnPage);
   }, [currentPage, contacts, keyword]);
 
-  console.log(contactRegular);
-
   const handleNextPage = () => {
     if (currentPage < totalPageCount) {
       setCurrentPage(currentPage + 1);

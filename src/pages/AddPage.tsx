@@ -75,8 +75,6 @@ const AddPage = () => {
         .filter((phone) => phone.trim())
         .map((phone) => ({ number: phone })),
     };
-    console.log(newContactData);
-
     addNewContact(newContactData)
       .then(() => {
         navigate("/");
