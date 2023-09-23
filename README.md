@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Phone Book Apps
+hallo, phone book apps ini berbasis web namun dapat mobile friendly karena sudah diatur sedemikian rupa agar nyaman digunakan pada mobile. Phone apps ini merupakan proyek contact apps kedua saya, dan yang pertama merupakan tugas akhir dari pembelajaran di platform Dicoding Indonesia. Phone Apps ini dibuat dengan design yang simple dan mengedepankan fungsionalitas apps ini, phone apps ini juga memiliki tema monochrome agar dapat terlihat simple namun dapat diterima oleh semua kalangan. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> URL Web Live: https://phone-book-borut.netlify.app/ 
+> Durasi pengerjaan: 4 hari (rabu-sabtu, termasuk eksplorasi teknologi baru)
 
-## Available Scripts
+*fyi, borut merupakan singkatan dari bocah garut. Karena saya berkeinginan membawa nama kota saya menjadi dikenal oleh banyak orang "melalui prestasi"
 
-In the project directory, you can run:
+# Tech Stack
+1. React Js + Typescript (CRA)
+2. Emotion
+3. Apollo Client
+4. React Hooks, React Context
 
-### `npm start`
+*fyi, Terdapat beberapa hal baru bagi saya, namun saya berusaha mencoba membuat aplikasi ini sebaik mungkin menggunakan tech stack yang sesuai dengan yang digunakan di perusahaan karena Tokopedia merupakan perusahaan impian saya dari saat saya masih di bangku SMK (2018). 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Feature
+- Screen Homepage
+  - Favorite Contact List (menggunakan localStorage)
+    - Detail Contact
+       - UnFavorite button (add to contact regular) 
+       - Delete Contact (with confirmation box)
+  - Contact List (Regular)
+    - Detail Contact
+      - Favorite button (add to favorite list)
+      - delete contact (with confirmation box)
+  - Add New Contact
+    - Form add new
+      - Firstname (A-Z, unique)
+      - lastname (A-Z, unique)
+      - Dynamic form input for number contact
+         - phone number (number, +, multiple)
+      - button submit
+# How to Run
+1. npm install
+2. npm start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Terimakasih, semoga dapat dipertimbangkan kepada tahapan selanjutnya.
