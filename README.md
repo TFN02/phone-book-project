@@ -21,6 +21,7 @@ hallo, phone book apps ini berbasis web namun dapat mobile friendly karena sudah
        - UnFavorite button (add to contact regular) 
        - Delete Contact (with confirmation box)
   - Contact List (Regular)
+    - Pagination (with 10 item at initial load)
     - Detail Contact
       - Favorite button (add to favorite list)
       - delete contact (with confirmation box)
