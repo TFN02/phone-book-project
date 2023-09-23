@@ -30,7 +30,6 @@ const FavoritePage: React.FC<Props> = ({contacts}) => {
     );
 
     if (storedContacts) {
-      // Jika ada data yang tersimpan di local storage, gunakan data tersebut
       const localContacts = JSON.parse(storedContacts);
       const filteredLocalFavoriteContacts = localContacts.filter(
         (item: any) =>

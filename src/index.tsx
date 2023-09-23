@@ -8,7 +8,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { ContactsProvider } from './contexts/ContactsContext';
 
 const client = new ApolloClient({
-  uri: 'https://wpe-hiring.tokopedia.net/graphql', // Ganti dengan URL GraphQL server Anda
+  uri: 'https://wpe-hiring.tokopedia.net/graphql',
   cache: new InMemoryCache(),
 });
 

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 /** @jsxImportSource @emotion/react */
-import { css, SerializedStyles } from "@emotion/react";
+import { css } from "@emotion/react";
 import { footer } from '../styles/global.style';
 
 const Footer: FC = () => {

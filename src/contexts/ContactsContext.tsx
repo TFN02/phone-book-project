@@ -41,8 +41,6 @@ export function ContactsProvider({
   children: React.ReactNode;
   client: ApolloClient<any>;
 }) {
-  // const storedContacts = localStorage.getItem("contacts");
-  // const initialContacts = storedContacts ? JSON.parse(storedContacts) : [];
 
   const [contacts, setContacts] = useState<Contact[]>([]);
 
@@ -58,10 +56,8 @@ export function ContactsProvider({
       const storedContacts = localStorage.getItem("contacts");
 
       if (storedContacts) {
-        // Jika ada data yang tersimpan di localStorage, gunakan data tersebut
         setContacts(JSON.parse(storedContacts));
       } else {
-        // Jika tidak ada data di localStorage, gunakan data dari GraphQL
         setContacts(updateContact);
       }
     }
@@ -89,8 +85,6 @@ export function ContactsProvider({
           phones: newContact.phones,
           },
       });
-  
-      // Perbarui data kontak setelah menambahkan kontak baru
       if (result.data) {
         setContacts((prevContacts) => [...prevContacts, result.data.insert_contact.returning[0]]);
       }
@@ -118,13 +112,12 @@ export function ContactsProvider({
   const deleteContact = async (contactId: number): Promise<void> => {
     try {
       await client.mutate({
-        mutation: DELETE_CONTACT, // Gantilah dengan operasi GraphQL untuk menghapus kontak
+        mutation: DELETE_CONTACT, 
         variables: {
           id: contactId,
         },
       });
 
-      // Perbarui data kontak setelah menghapus kontak
       setContacts((prevContacts) =>
         prevContacts.filter((contact) => contact.id !== contactId)
       );

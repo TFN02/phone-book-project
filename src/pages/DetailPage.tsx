@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdOutlineDelete } from "react-icons/md";
-import { BsBookmarkStar, BsBookmarkStarFill } from "react-icons/bs";
+import { BsBookmarkStar } from "react-icons/bs";
 import { useNavigate, useParams, Link } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";

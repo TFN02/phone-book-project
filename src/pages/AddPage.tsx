@@ -19,7 +19,7 @@ const AddPage = () => {
   const { contacts, addNewContact } = useContacts();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [phones, setPhones] = useState([""]); // State untuk nomor telepon dinamis
+  const [phones, setPhones] = useState([""]); 
   const isValidName = (name: string): boolean => /^[A-Za-z]+$/.test(name);
   const isFirstNameUnique = (name: string) =>
     !contacts.some((contact) => contact.first_name === name);
