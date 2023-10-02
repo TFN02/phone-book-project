@@ -23,7 +23,8 @@ const ContactItem: React.FC<ContactItemProps> = ({ id, first_name,last_name, pho
         <h3>
             <Link to={`/contacts/${id}`}>{first_name}</Link>
         </h3>
-        <p>{phones[0].number}</p>
+        
+        <p>{phones.length > 0 ? phones[0].number : 'contact kosong' }</p>
       </div>
       <Link to={`/contacts/${id}`}>
         <BiSolidRightArrowCircle size={25} />
